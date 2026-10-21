@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaje a la Playa con Amigos</title>
+  
+  <!-- PRÁCTICA 7: Estilos básicos y paleta de colores -->
+  <style>
+    :root {
+      --azul-mar: #0277bd;
+      --turquesa: #00838f;
+      --arena-clara: #f4f9f9;
+      --blanco: #ffffff;
+      --texto: #263238;
+      --borde: #b0bec5;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+      line-height: 1.6;
+      background-color: var(--arena-clara);
+      color: var(--texto);
+    }
+
+    header {
+      background-color: var(--azul-mar);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
+    }
+
+    nav {
+      background-color: var(--turquesa);
+      padding: 0.8rem;
+      margin-block: 1rem;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: var(--blanco);
+      padding: 1.5rem;
+      margin-block: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--borde);
+    }
+
+    h1, h2, h3 {
+      color: var(--azul-mar);
+    }
+
+    /* Manejo responsivo para evitar desbordamiento */
+    img, iframe {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    figure {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #546e7a;
+      margin-top: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-block: 1rem;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: var(--azul-mar);
+    }
+
+    th, td {
+      border: 1px solid var(--borde);
+      padding: 0.6rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0f7fa;
+      color: var(--texto);
+    }
+
+    blockquote {
+      background-color: #e1f5fe;
+      border-left: 5px solid var(--azul-mar);
+      margin: 1rem 0;
+      padding: 0.8rem 1.2rem;
+      font-style: italic;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    input, textarea, button {
+      padding: 0.6rem;
+      border: 1px solid var(--borde);
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--azul-mar);
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #01579b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid var(--borde);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PRÁCTICA 1: Estructura semántica -->
+  <header>
+    <h1>Viaje a la Playa con Amigos</h1>
+  </header>
+
+  <!-- PRÁCTICA 2: Navegación y enlaces (internos y externos) -->
+  <nav aria-label="Navegación principal">
+    <a href="#contexto">Contexto</a>
+    <a href="#cronograma">Cronograma</a>
+    <a href="#aprendizajes">Aprendizajes</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8529240409893!2d-80.9632860252119!3d-2.2096708977708093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902e0915998a1ccf%3A0x6b40bd4ef90beaa!2sSalinas%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1es!2sec" target="_blank" rel="noopener">Google Maps</a>
+    <a href="https://www.inocar.midef.gob.ec/web/index.php/pronostico-de-olas" target="_blank" rel="noopener">Estado del Mar (INOCAR)</a>
+  </nav>
+
+  <main>
+
+    <!-- PRÁCTICA 1: Sección 1 - Contexto -->
+    <section id="contexto">
+      <h2>1. Contexto del Viaje</h2>
+      
+      <!-- Subtítulo h3 -->
+      <h3>Ubicación y entorno de la experiencia</h3>
+      <p>Organizamos una escapada de fin de semana hacia la playa con un grupo de 4 amigos para desconectarnos de la rutina académica y celebrar el fin del semestre.</p>
+
+      <!-- PRÁCTICA 3: Lista no ordenada (4 elementos/materiales reales) -->
+      <h3>Materiales e insumos utilizados</h3>
+      <ul>
+        <li>Protector solar SPF 50</li>
+        <li>Celular</li>
+        <li>Snacks</li>
+        <li>Protector de celular</li>
+      </ul>
+    </section>
+
+    <!-- PRÁCTICA 1: Sección 2 - Desarrollo cronológico -->
+    <section id="cronograma">
+      <h2>2. Desarrollo Cronológico</h2>
+      
+      <!-- Subtítulo h3 -->
+      <h3>Secuencia de la jornada</h3>
+      
+      <!-- PRÁCTICA 3: Lista ordenada (3 pasos reales) -->
+      <ol>
+        <li>Salida al amanecer desde la ciudad y llegada a la costa a las 09:00 AM.</li>
+        <li>Salir en bote inflable y nadar en el mar durante el medio dia hasta la tarde.</li>
+        <li>Salir a pasear a la orilla en la noche.</li>
+      </ol>
+
+      <!-- PRÁCTICA 4: Tabla de información con columna "Estado" -->
+      <h3>Registro de actividades</h3>
+      <table>
+        <caption>Plan de actividades y estado de cumplimiento</caption>
+        <thead>
+          <tr>
+            <th scope="col">Actividad</th>
+            <th scope="col">Fecha / Hora</th>
+            <th scope="col">Duración</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Viaje en carretera y llegada</td>
+            <td>21 de Julio, 07:00 AM</td>
+            <td>3 horas</td>
+            <td>Completado</td>
+          </tr>
+          <tr>
+            <td>Nadar en el mar</td>
+            <td>21 de Julio, 01:30 PM</td>
+            <td>4 horas</td>
+            <td>Completado</td>
+          </tr>
+          <tr>
+            <td>Tour en bote inflable por el mar</td>
+            <td>21 de Julio, 10:00 AM</td>
+            <td>1.3 horas</td>
+            <td>Completado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PRÁCTICA 5: Imágenes y recurso incrustado -->
+    <section id="galeria">
+      <h2>3. Galería y Recurso Multimedia</h2>
+      <h3>Fotografías de la experiencia y mapa</h3>
+
+      <!-- IMAGEN 1: Foto propia / Ruta local o URL pública -->
+      <figure>
+
+        <img src="images/corazon%20Salinas.jpg" alt="Fotografía del grupo de amigos en un corazon" width="500">
+        <figcaption>Figura 1: Grupo de amigos en bote inflable.</figcaption>
+      </figure>
+
+      <!-- IMAGEN 2: Foto propia / Ruta local o URL pública -->
+      <figure>
+        <img src="images/carretera.jpg" alt="carretera del viaje a la playa" width="500">
+        <figcaption>Figura 2: Carretera yendo al sitio.</figcaption>
+      </figure>
+
+      <figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8529240409893!2d-80.9632860252119!3d-2.2096708977708093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902e0915998a1ccf%3A0x6b40bd4ef90beaa!2sSalinas%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1es!2sec" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación geográfica del viaje en Google Maps"></iframe>
+        <figcaption>Mapa 1: Ubicación geográfica del destino visitado.</figcaption>
+      </figure>
+    </section>
+
+    <!-- PRÁCTICA 1: Sección 3 - Aprendizajes -->
+    <section id="aprendizajes">
+      <h2>4. Aprendizajes de la Experiencia</h2>
+      
+      <!-- Subtítulo h3 -->
+      <h3>Conclusiones generales</h3>
+      <p>Viajar en grupo enseña sobre organización, logística y tolerancia para afrontar imprevistos en el camino.</p>
+
+      <!-- PRÁCTICA 3: Cita relevante y atribuida -->
+      <blockquote>
+        <p>«En el mar, se quita la mayoria del estrés, con amigos se disfruta mucho más.</p>
+        <footer>— <cite>Frase adaptada por el grupo</cite></footer>
+      </blockquote>
+    </section>
+
+    <!-- PRÁCTICA 6: Formulario con 4 campos -->
+    <section id="contacto">
+      <h2>Unirme al Próximo Viaje</h2>
+      <form action="#" method="get">
+        <label for="nombre">Nombre completo:</label>
+        <input id="nombre" name="nombre" type="text" required placeholder="Ej. Ana Pérez">
+
+        <label for="correo">Correo electrónico:</label>
+        <input id="correo" name="correo" type="email" required placeholder="ejemplo@correo.com">
+
+        <!-- Cuarto campo justificado: Acompañantes para transporte -->
+        <label for="asientos">Número de acompañantes (para coordinar asientos):</label>
+        <input id="asientos" name="asientos" type="number" min="1" max="5" required placeholder="1">
+
+        <label for="mensaje">Mensaje o propuesta de destino:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PRÁCTICA 1: Pie de página (Autoría y año) -->
+  <footer>
+    <p>Autoría: Katherinne Argandoña | Año: 2026</p>
+  </footer>
+
+</body>
+</html>
